@@ -3,32 +3,59 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- displays site properly based on user's device -->
     <link rel="stylesheet" href="./public/css/style.css">
-    <title>Document</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+    <title>Frontend Mentor | Fylo data storage component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+        .attribution {
+            font-size: 11px;
+            text-align: center;
+        }
+
+        .attribution a {
+            color: hsl(228, 45%, 44%);
+        }
+    </style>
 </head>
 
-<body>
-    <header>
-        <nav>
-            <div>
-
+<body class="bg-bluemarin">
+    <div class="d-flex justify-content-center align-items-center w-100 h-100">
+        <div class="box-border-radius d-flex flex-column align-items-start mt-3 ps-5 gap-3 justify-content-center">
+            <img src="public/images/logo.svg" alt="">
+            <div class="d-flex gap-4">
+                <div class="leftlink bg-bluemarin p-2 rounded-1">
+                    <img src="public/images/icon-document.svg" alt="">
+                </div>
+                <div class="leftlink bg-bluemarin p-2 rounded-1">
+                    <img src="public/images/icon-folder.svg" alt="">
+                </div>
+                <div class="leftlink bg-bluemarin p-2 rounded-1">
+                    <img src="public/images/icon-upload.svg" alt="">
+                </div>
             </div>
-        </nav>
-    </header>
-    <main>
-        <section>
-            <div>
-
-            </div>
-        </section>
-    </main>
-    <footer>
-        <div>
-
         </div>
-    </footer>
+        <div class="box-border d-flex flex-column align-items-start ms-5 mt-3 ps-5 gap-3 justify-content-center position-relative">
+            <p class="text-white">You’ve used 815 GB of your storage</p>
+            <div class="bulle">
+                <span class="text-dark">185 GB Left</span>
+            </div>
+            <div class="justify-content-between d-flex flex-row">
+                <span class="text-white">0 GB</span>
+                <span class="text-white">1000 GB</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+        Coded by <a href="#">Your Name Here</a>.
+    </div>
+    <!-- Script JS Bootstrap -->
     <script src='./node_modules/bootstrap/dist/js/bootstrap.bundle.js'></script>
 </body>
 
